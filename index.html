@@ -1,13 +1,100 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MyApps</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css ">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
+        <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="#">AMBER<span>LINKS</span></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item active"> <a class="nav-link" href="#myCarousel">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#benefits">Services</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+        </ul>
+      </div>
+            </div>
+    </nav>
+
+<!-- Swiper Silder
+    ================================================== --> 
+<!-- Slider main container -->
+<div class="swiper-container main-slider" id="myCarousel">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slider-bg-position" style="background:url('apple-desk-electronics-48753.jpg')" data-hash="slide1">
+      <h2>Mobile development</h2>
+    </div>
+    <div class="swiper-slide slider-bg-position" style="background:url('connection-data-desk-892757.jpg')" data-hash="slide2">
+      <h2>Website development</h2>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+  <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+</div>
+
+<!-- Benefits
+    ================================================== -->
+<section class="service-sec" id="benefits">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading">
+      <h2><small>User Experience </small>WHAT MAKES OUR WORK BEST?</h2>
+    </div>
+        </div>
+      <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-plus" aria-hidden="true"></i>
+          <h3>Skilled Experts Team</h3>
+          <p>We have expert team members for each technology; just ask us what you need.</p>
+        </div>
+        <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-leaf" aria-hidden="true"></i>
+          <h3>On Time Delivery</h3>
+          <p>We have a track record of 100% client satisfaction.</p>
+        </div>
+        <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-leaf" aria-hidden="true"></i>
+          <h3>Project Progress Sharing with Client</h3>
+          <p>We follow a step-by-step process, both for development projects.</p>
+        </div>
+        <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-bell" aria-hidden="true"></i>
+          <h3>We Follow Latest Web and Mobile Application development standards</h3>
+          <p>Our vast skill set and proven competency in each of the technologies.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4"> <img src="" class="img-fluid" /> </div>
+    </div>
+    <!-- /.row --> 
+  </div>
+</section>
+
+<!-- About 
+    ================================================== -->
+<section class="about-sec parallax-section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><small>Who We Are</small>About<br>Us</h2>
+      </div>
+
+      <div class="col-md-12">
+        <p>At AmberLinks, we develop innovative and creative products and services that provide total communication and information solutions.</p>
+        <p>Contact : +91-8104912610</p>
+        <p><a href="#" class="btn btn-transparent-white btn-capsul">Explore More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <script src="app.js"></script>
 </html>
