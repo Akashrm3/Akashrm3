@@ -30,14 +30,14 @@
 	firebase = firebase.initializeApp(firebaseConfig);
 	firebase.analytics();
 	
-	var i =5;
+	var i =1;
 	
 	function myFunction() {
 		alert("clicked");
 		
 		var youtubeimgsrc = document.getElementById("myImage").src;
 		console.log(youtubeimgsrc);
-		  firebase.database().ref('users/' + "").set({
+		  firebase.database().ref('users/' + i).set({
 			    username: "akash",
 			    email: "akashec1004@gmail.com",
 			    image:youtubeimgsrc
